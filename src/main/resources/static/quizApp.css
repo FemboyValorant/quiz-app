@@ -119,3 +119,13 @@ li {
 .results{
     display: none;
 }
+
+.inactive {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.inactive:hover {
+    background-color: RGB(36,37,38);
+    color: RGB(176,178,184);
+}

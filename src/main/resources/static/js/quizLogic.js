@@ -57,6 +57,19 @@ function updateQuestion(){
     document.getElementsByClassName("question-number")[0].innerHTML = questions[currentQuestion].number
 
     document.getElementsByClassName("media")[0].src = questions[currentQuestion].image;
+
+    if (currentQuestion == 0){
+        document.querySelector('input[value="Previous"]').classList.add("inactive")
+    }
+
+    else if (currentQuestion == 2){
+        document.querySelector('input[value="Next"]').classList.add("inactive")
+    }
+
+    else{
+        document.querySelector('input[value="Previous"]').classList.remove("inactive")
+        document.querySelector('input[value="Next"]').classList.remove("inactive")
+    }
 }
 
 nextQuestion.addEventListener('click', function(evt){
