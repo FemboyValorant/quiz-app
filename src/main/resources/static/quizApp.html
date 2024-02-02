@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="quizApp.css">
+    <script src="/js/quizLogic.js" defer> </script>
+</head>
+<body>
+    <h1 class="header">My Interactive Quiz</h1>
+
+    <p>
+        <button class="start">Start Quiz!</button>
+    </p>
+    <div class="quiz">
+        <img class="media" src="images/butterdog.jpg" alt="">
+        <p class="question-number">Question 1</p>
+
+        <p class="question">What is on bro's head!?</p>
+        <p class="selection">Your current answer is ""</p>
+
+        <div class="container">
+            <div class="container answers">
+                <button class="answer a">A: Watermelon</button>
+                <button class="answer b">B: Watermelon</button>
+                <button class="answer c">C: Watermelon</button>
+                <button class="answer d">D: Butter</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container nav">
+                <input type="submit" class="submit" value="Previous">
+                <input type="submit" class="submit" value="Next">
+                <input type="submit" class="submit" value="Submit Quiz">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container results">
+        <p class="youGot">You got "" out of 3</p>
+
+        <table>
+            <tr><th>Your Answer</th><th>Correct Answer</th></tr>
+            <tr><td class="result 1">""</td><td class="correct 1">Butter</td></tr>
+            <tr><td class="result 2">""</td><td class="correct 2">Water</td></tr>
+            <tr><td class="result 3">""</td><td class="correct 3">Prelude to Chaos</td></tr>
+        </table>
+        <!-- <p>Correct answers</p>
+        <div class = "container lists"> 
+            <ul>
+                <li>Butter</li>
+                <li>Water</li>
+                <li>Prelude to Chaos</li>
+            </ul>
+        </div> -->
+    </div>
+</body>
+</html>
